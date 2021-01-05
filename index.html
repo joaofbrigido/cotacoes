@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans
-    +Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="./css/style.css">
 
@@ -15,7 +15,59 @@
 </head>
 
 <body>
+    <header class="header">Cotações</header>
 
+    <main class="mainContainer">
+        <div class="usd cotacao">
+            <h3>USD</h3>
+            <span id="usd-cot">R$ 5,321</span>
+        </div>
+
+        <div class="eur cotacao">
+            <h3>EUR</h3>
+            <span id="eur-cot">R$ 6,321</span>
+        </div>
+
+        <div class="btc cotacao">
+            <h3>btc</h3>
+            <span id="btc-cot">R$ 180.870,5</span>
+        </div>
+
+        <div class="ibov cotacao">
+            <h3>ibovespa</h3>
+            <span id="ibov-cot">118.854,711</span>
+        </div>
+
+        <div class="selic cotacao">
+            <h3>selic</h3>
+            <span id="selic-cot">2%</span>
+        </div>
+
+        <div class="cdi cotacao">
+            <h3>cdi</h3>
+            <span id="cdi-cot">2%</span>
+        </div>
+
+        <div class="info">
+            <!-- <span class="place-holder">Clique em alguma Cotação</span> -->
+
+            <section class="info-content">
+                <h2 class="info-title">Dolar</h2>
+
+                <div class="info-valores">
+                    <p>Valor de Compra: <span id="val-compra">R$ 5.2681</span></p>
+                    <p>Valor de Venda: <span id="val-venda">R$ 5.2763</span></p>
+                    <p>Variação: <span id="val-variacao">1,53%</span></p>
+                </div>
+
+                <p class="info-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, error. Sunt distinctio neque non quos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam harum odio nostrum reprehenderit.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <span>Feito Por João Fernando Amaral Brigido. Veja outros Projetos em: <a target="_blanck" href="https://joaofbrigido.github.io">joaofbrigido.github.io</a></span>
+    </footer>
 
 
     <script src="./js/script.js"></script>
