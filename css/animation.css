@@ -1,0 +1,67 @@
+@keyframes grow-up {
+    from {
+        transform: scale(0);
+      }
+      to {
+        transform: scale(1);
+      }
+}
+
+@keyframes show-up {
+  from {
+      opacity: 0;
+      transform: translate3d(0,60px,0) scale(.8);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0,0,0) scale(1);
+    }
+}
+
+.usd {
+    animation: grow-up .4s forwards;
+    transition: .3s linear;
+}
+.eur {
+    animation: grow-up .6s forwards;
+    transition: .3s linear;
+}
+.btc {
+    animation: grow-up 1.1s forwards;
+    transition: .3s linear;
+}
+.ibov {
+    animation: grow-up 1.3s forwards;
+    transition: .3s linear;
+}
+.selic {
+    animation: grow-up .9s forwards;
+    transition: .3s linear;
+}
+.cdi {
+    animation: grow-up .9s forwards;
+    transition: .3s linear;
+}
+.info{
+  animation: show-up 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.usd:hover, .eur:hover {
+  background-color: #3157ee;
+  box-shadow: 1px 1px 15px 8px #10226b;
+}
+
+.selic:hover, .cdi:hover {
+  background-color: #1f7c9e;
+  box-shadow: 1px 1px 15px 8px #093442;
+}
+
+.btc:hover {
+  background-color: #5b27c2;
+  box-shadow: 1px 1px 15px 8px #30126b;
+}
+
+.ibov:hover {
+  background-color: #202938;
+  box-shadow: 1px 1px 15px 8px #19212e;
+}
