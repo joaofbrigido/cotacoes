@@ -1,0 +1,146 @@
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111621;
+    color: #F1F2F6;
+}
+
+.header {
+    background: linear-gradient(135deg, #6A33D9, #3E64FF);
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    text-transform: uppercase;
+    letter-spacing: .07em;
+    margin-bottom: 90px;
+}
+
+.mainContainer {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(12, 72px);
+    justify-content: center;
+    gap: 20px;
+    
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.cotacao {
+    width: 256px;
+    min-width: 100%;
+    height: 110px;
+    min-height: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+} 
+
+.cotacao h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.cotacao span {
+    font-size: 25px;
+}
+
+.usd {
+    grid-column: 1 / 3;
+    background-color: #3E64FF;
+}
+.eur {
+    grid-column: 4 / 6;
+    background-color: #3E64FF;
+}
+.btc {
+    grid-column: 7 / 9;
+    background-color: #6A33D9;
+}
+.ibov {
+    grid-column: 10 / -1;
+    background-color: #293447;
+}
+.selic {
+    grid-column: 1 / 3;
+    background-color: #2D93B9;
+}
+.cdi {
+    grid-column: 1 / 3;
+    background-color: #2D93B9;
+}
+.info {
+    background-color: #232833;
+    border-radius: 5px;
+    grid-column: 4 / -1;
+    grid-row: 2 / -1;
+}
+
+.info-content {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+    align-items: center;
+}
+
+.info-title {
+    justify-self: center;
+    grid-column: 1 / -1 ;
+
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
+
+.info-valores {
+    grid-column: 1 / 3;
+    grid-row: 2 / -1;
+
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.info-valores p {
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.9;
+}
+
+.info-valores span {
+    font-size: 25px;
+    padding-left: 8px;
+}
+
+.info-text {
+    grid-column: 3 / -1;
+    grid-row: 2 / -1;
+    padding: 0 20px 20px 0px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* .info .place-holder {
+    font-size: 25px;
+    opacity: .4;
+} */
+
+.footer {
+    background-color: #232833;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.footer a {
+    text-decoration: none;
+    color: #AEBAEE;
+}
