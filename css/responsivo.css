@@ -9,12 +9,17 @@
     }
 
     .info {
-        margin-bottom: 40px;
         max-width: 810px;
+        margin-bottom: 40px;
     }
     .info-text {
         padding-left: 20px;
         max-width: 530px;
+    }
+
+    .footer {
+        position: static;
+        margin-top: 20px;
     }
 }
 
@@ -29,7 +34,6 @@
         text-align: center;
     }
     .info-title {
-        justify-self: center;
         padding-top: 10px;
         padding-bottom: 20px;
     }

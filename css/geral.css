@@ -127,20 +127,21 @@ body {
     line-height: 1.5;
 }
 
-.info .place-holder {
+/* .info .place-holder {
     font-size: 25px;
     opacity: .4;
-}
+} */
 
-/* .footer {
+.footer {
     background-color: #232833;
     font-size: 18px;
     text-align: center;
     padding: 20px;
     width: 100%;
-
+    position: absolute;
+    bottom: 0;
 }
 .footer a {
     text-decoration: none;
     color: #AEBAEE;
-} */
+}
