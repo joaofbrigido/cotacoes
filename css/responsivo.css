@@ -4,50 +4,38 @@
     }
 
     .mainContainer {
-        height: 20vh;
-        grid-template-columns: repeat(11, 72px);
-    }
-
-    .usd {
-        grid-column: 2 / 4;
-        grid-row: 1;
-    }
-
-    .eur {
-        grid-column: 5 / 7;
-        grid-row: 1;
-    }
-
-    .btc {
-        grid-column: 8 / 10;
-        grid-row: 1;
-    }
-
-    .selic {
-        grid-column: 2 / 4;
-    }
-
-    .cdi {
-        grid-column: 5 / 7;
-        grid-row: 2;
-    }
-
-    .ibov {
-        grid-column: 8 / 10;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .info {
-        grid-column: 2 / 11;
-        grid-row: 3 / -1;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
+        max-width: 810px;
+    }
+    .info-text {
+        padding-left: 20px;
+        max-width: 530px;
     }
 }
 
 @media (max-width: 850px) {
     .mainContainer {
-        grid-template-columns: repeat(4, 60px);
+        width: 90vw;
     }
+    .info-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .info-title {
+        justify-self: center;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+}
 
+@media (max-width: 600px) {
     .cotacao {
         width: 140px;
         height: 85px;
@@ -71,49 +59,10 @@
     .info-text {
         font-size: 15px;
     }
-    
-    .usd {
-        grid-column: 1 / 2;
-    }
-    .eur {
-        grid-column: 3 / 4;
-    }
-    .btc {
-        grid-column: 1 / 2;
-        grid-row: 2;
-    }
-    .ibov {
-        grid-column: 3 / 4;
-        grid-row: 2;
-    }
-    .selic {
-        grid-column: 1 / 2;
-        grid-row: 3;
-    }
-    .cdi {
-        grid-column: 3 / 4;
-        grid-row: 3;
-    }
+}
 
-    .info {
-        grid-column: 1/-1;
-        grid-row: 4;
-        padding-bottom: 20px;
+@media (max-width: 335px) {
+    .mainContainer {
+        width: 100vw;
     }
-    .info-content {
-        grid-template-rows: repeat(5, 70px);
-    }
-    .info-valores { 
-        grid-column: 1/-1;
-        grid-row: 2 / 4;
-    }
-    .info-text {
-        grid-column: 1/-1;
-        grid-row: 4 / -1;
-        padding: 0 20px 20px 20px;
-    }
-
-    /* .footer {
-        font-size: 16px;
-    } */
 }
