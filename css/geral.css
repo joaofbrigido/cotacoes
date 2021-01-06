@@ -33,9 +33,9 @@ body {
 
 .cotacao {
     width: 256px;
-    min-width: 100%;
     height: 110px;
-    min-height: 100%;
+    max-width: 256px;
+    max-height: 110px;
     border-radius: 5px;
     padding: 10px;
     text-align: center;
@@ -71,6 +71,7 @@ body {
 .selic {
     grid-column: 1 / 3;
     background-color: #2D93B9;
+    grid-row: 2;
 }
 .cdi {
     grid-column: 1 / 3;
@@ -126,12 +127,12 @@ body {
     line-height: 1.5;
 }
 
-/* .info .place-holder {
+.info .place-holder {
     font-size: 25px;
     opacity: .4;
-} */
+}
 
-.footer {
+/* .footer {
     background-color: #232833;
     font-size: 18px;
     text-align: center;
@@ -143,4 +144,4 @@ body {
 .footer a {
     text-decoration: none;
     color: #AEBAEE;
-}
+} */
