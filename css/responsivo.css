@@ -13,13 +13,12 @@
         margin-bottom: 40px;
     }
     .info-text {
-        padding-left: 20px;
         max-width: 530px;
     }
 
     .footer {
         position: static;
-        margin-top: 20px;
+        margin-top: 40px;
     }
 }
 
@@ -27,7 +26,7 @@
     .mainContainer {
         width: 90vw;
     }
-    .info-content {
+    .info section.ativo {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
