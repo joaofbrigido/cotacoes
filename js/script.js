@@ -39,3 +39,16 @@ function dinamicContent() {
 }
 
 dinamicContent();
+
+function fetchCotacoes() {
+    url = 'https://api.hgbrasil.com/finance?key=bffa8439';
+
+    fetch('https://api.hgbrasil.com/finance?key=bffa8439/')
+        .then(resp => resp.json())
+        .then(cotaJson => {
+            console.log(cotaJson);
+        })
+
+}
+
+fetchCotacoes();
