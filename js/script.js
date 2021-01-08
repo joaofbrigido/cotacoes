@@ -41,14 +41,20 @@ function dinamicContent() {
 dinamicContent();
 
 function fetchCotacoes() {
-    url = 'https://api.hgbrasil.com/finance?key=bffa8439';
+    const usd = document.querySelector('[data-usd]');
+    const eur = document.querySelector('[data-eur]');
+    const btc = document.querySelector('[data-btc]');
+    const ibov = document.querySelector('[data-ibov]');
+    const selic = document.querySelector('[data-selic]');
+    const cdi = document.querySelector('[data-cdi]');
 
-    fetch('https://api.hgbrasil.com/finance?key=bffa8439/')
+    url = 'https://api.hgbrasil.com/finance?format=json-cors&key=bffa8439';
+
+    fetch(url)
         .then(resp => resp.json())
         .then(cotaJson => {
-            console.log(cotaJson);
+            console.log(cotaJson.results);
         })
-
 }
 
 fetchCotacoes();
