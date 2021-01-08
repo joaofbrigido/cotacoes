@@ -69,7 +69,7 @@ function fetchCotacoes() {
     const fatorDiarioCdi = document.querySelector('[data-cota="fatorDiarioCdi"]');
 
 
-    url = 'https://api.hgbrasil.com/finance?format=json-cors&key=bffa8439';
+    url = 'https://api.hgbrasil.com/finance?format=json-cors&key=64788d64';
 
     fetch(url)
         .then(resp => resp.json())
