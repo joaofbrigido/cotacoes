@@ -87,7 +87,7 @@ body {
 
 .info-content {
     display: grid;
-    grid-template: repeat(3, 1fr) / repeat(5, 1fr);
+    grid-template: repeat(3, 1fr) / repeat(6, 1fr);
     align-items: center;
 }
 
@@ -102,7 +102,7 @@ body {
 }
 
 .info-valores {
-    grid-column: 1 / 3;
+    grid-column: 1 / 4;
     grid-row: 2 / -1;
 
     padding-left: 20px;
@@ -121,9 +121,9 @@ body {
 }
 
 .info-text {
-    grid-column: 3 / -1;
+    grid-column: 4 / -1;
     grid-row: 2 / -1;
-    padding: 0 20px 30px 20px;
+    padding: 10px 20px 30px 20px;
     font-size: 16px;
     line-height: 1.5;
 }
