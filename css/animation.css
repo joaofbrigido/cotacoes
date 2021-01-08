@@ -43,25 +43,25 @@
     transition: .3s linear;
 }
 .info.anima {
-  animation: show-up .4s cubic-bezier(0.215, 0.610, 0.355, 1);
+  animation: show-up .3s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
-.usd:hover, .eur:hover {
+.usd:hover, .eur:hover, .usd.ativo, .eur.ativo {
   background-color: #3157ee;
   box-shadow: 1px 1px 15px 8px #10226b;
 }
 
-.selic:hover, .cdi:hover {
+.selic:hover, .cdi:hover, .selic.ativo, .cdi.ativo {
   background-color: #1f7c9e;
   box-shadow: 1px 1px 15px 8px #093442;
 }
 
-.btc:hover {
+.btc:hover, .btc.ativo {
   background-color: #5b27c2;
   box-shadow: 1px 1px 15px 8px #30126b;
 }
 
-.ibov:hover {
+.ibov:hover, .ibov.ativo {
   background-color: #202938;
   box-shadow: 1px 1px 15px 8px #19212e;
 }
