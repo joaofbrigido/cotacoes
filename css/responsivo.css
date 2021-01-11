@@ -36,6 +36,9 @@
         padding-top: 10px;
         padding-bottom: 20px;
     }
+    .light-mode {
+        margin-top: 12px;
+    }
 }
 
 @media (max-width: 600px) {
