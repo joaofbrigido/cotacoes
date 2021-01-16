@@ -27,12 +27,13 @@ export default function fetchCotacoes() {
   const fatorDiarioCdi = document.querySelector('[data-cota="fatorDiarioCdi"]');
 
 
-  const url = 'https://api.hgbrasil.com/finance?format=json-cors&key=64788d64';
+  async function setValCotacoes() {
+    const url = 'https://api.hgbrasil.com/finance?format=json-cors&key=64788d64';
+    try {
+      const resp = await fetch(url);
+      const cotaJson = await resp.json();
+      const cotacao = await cotaJson.results;
 
-  fetch(url)
-    .then(resp => resp.json())
-    .then(cotaJson => cotaJson.results)
-    .then(cotacao => {
       let usdBuyPrice = cotacao.currencies.USD.buy;
       let usdSellPrice = cotacao.currencies.USD.sell;
       let usdVariation = cotacao.currencies.USD.variation;
@@ -74,5 +75,10 @@ export default function fetchCotacoes() {
       let dailyFactory = cotacao.taxes[0].daily_factor;
       fatorDiario.innerHTML = `${dailyFactory}%`;
       fatorDiarioCdi.innerHTML = `${dailyFactory}%`;
-    })
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  setValCotacoes();
+
 }
